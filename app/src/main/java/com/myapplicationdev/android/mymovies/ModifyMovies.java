@@ -25,6 +25,7 @@ public class ModifyMovies extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_modify_movie);
+        setTitle("My Movies ~ Modify Movies");
 
         etTitle = findViewById(R.id.editTextTitle);
         etGenre = findViewById(R.id.editTextGenre);
@@ -79,9 +80,9 @@ public class ModifyMovies extends AppCompatActivity {
                 } else if (spinnerR.getSelectedItemPosition() == 5) {
                     ageLimit = "R21";
                 }
+                data.setRating(ageLimit);
                 dbh.updateMovies(data);
                 dbh.close();
-                ;
                 finish();
 
             }

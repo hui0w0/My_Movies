@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setTitle("My Movies ~ Show Movies");
+        setTitle("My Movies ~ Insert Movies");
 
         etTitle = findViewById(R.id.editTextTitle);
         etGenre = findViewById(R.id.editTextGenre);

@@ -25,6 +25,7 @@ public class ShowMovies extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_movies);
+        setTitle("My Movies ~ Show Movies");
 
         tbShow = findViewById(R.id.toggleButtonPG13);
         lvMovies = findViewById(R.id.lvMovies);
